@@ -1,0 +1,34 @@
+<!--patterns in html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patterns in html</title>
+</head>
+<style>
+    input:invalid{
+        border: 5px solid red ;
+    }
+    input:valid{
+        border: 2px solid green;
+    }
+    </style>
+<body>
+    <h1>patterns </h1>
+    <h2>pattern - [abc] , [a-z] , [A-Z] , [0-9] , [/d{14}]</h2>
+    <form>
+        <label for="creditcard">Credit card</label>
+        <input type="text" pattern="[\d{15}]">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" 
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+        <small>Must contain at least 8 characters, including 1 number, 1 uppercase, and 1 lowercase letter.</small>
+        <br><br>
+    </form>
+
+    <!--any types of patterns you can make !-->
+    <!--any thing u can make -->
+</body>
+</html>

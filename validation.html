@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validate</title>
+</head>
+<style>
+    input:valid{
+        border: 2px solid green;
+    }
+  input:invalid{
+        border: 5px solid red;
+    }
+</style>
+<body>
+    <h2>validate date </h2>
+    <form>
+        <label for="date">Date :</label>
+        <input type="text" id="date" pattern="\d{2}-\d{2}-\d{2}">
+<h2>phone number validation pattern : </h2>
+<label for="fonnumber">Phone number </label>
+<input type="text" id="fonnumber" pattern="[+][9][1]\d{10}">
+<h2>validate URL : </h2>
+<label for="text url">URL : </label>
+<input type="text" id="url"  pattern="https?://.+">
+<h2>text area :</h2>
+<textarea id="columns"></textarea>
+
+    </form>
+</body>
+</html>
